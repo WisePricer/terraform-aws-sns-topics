@@ -18,8 +18,9 @@
 # https://www.terraform.io/docs/providers/aws/r/aws_sns_topic_subscription.html
 
 module "enabled" {
-  source  = "devops-workflow/boolean/local"
-  version = "0.1.1"
+  #source  = "devops-workflow/boolean/local"
+  #version = "0.1.1"
+  source  = "git::https://github.com/WisePricer/terraform-local-boolean.git?ref=tags/v0.1.1"
   value   = "${var.enabled}"
 }
 /*
