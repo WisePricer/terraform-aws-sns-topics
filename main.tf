@@ -20,7 +20,8 @@
 module "enabled" {
   #source  = "devops-workflow/boolean/local"
   #version = "0.1.1"
-  source  = "git::https://github.com/WisePricer/terraform-local-boolean.git?ref=tags/v0.1.1"
+  #source  = "git::https://github.com/WisePricer/terraform-local-boolean.git?ref=tags/v0.1.1"
+  source  = "git::https://github.com/WisePricer/terraform-local-boolean.git"
   value   = "${var.enabled}"
 }
 /*
